@@ -6,3 +6,8 @@
 
 # Ignore venv directory
 venv/
+
+# Ignore pytest_cache
+.pytest_cache
+
+secrets.txt

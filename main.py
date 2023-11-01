@@ -123,9 +123,7 @@ async def get_serpapi_api_key():
     """
 
     if not os.environ.get("SERPAPI_API_KEY"):
-        return input(
-            "Please enter your SerpApi API key(press enter to use default api key): "
-        )
+        return input("Please enter your SerpApi API key(press enter to use default api key): ")
     else:
         return os.environ.get("SERPAPI_API_KEY")
 
@@ -270,9 +268,8 @@ async def main():
 
                     await download_store_image(results, session, connection, cursor)
                     print("-" * 40)
-                    print(
-                        f"Downloaded and stored {max_images} results in {round(time.time() - start_time,2)}"
-                    )
+                    print(f"Downloaded and stored {max_images} results in {round(time.time() - start_time,2)}")
+                    
                 else:
                     print(f"No result found!")
 
