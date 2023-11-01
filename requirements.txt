@@ -1,0 +1,5 @@
+google_images_download
+pillow
+psycopg2-binary
+aiohttp
+python-dotenv
